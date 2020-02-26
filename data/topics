@@ -1,0 +1,3 @@
+{"id":"bar","label":"Bar","date":{"$$date":1582742707426},"backlinks":["<a href=\"/journal/47f93f3d-0f9a-4ffb-81be-02fca00487d7\">[[Foo]] causes [[Bar]]</a>"],"_id":"9U0Hc0AS5jBN8Rsz"}
+{"id":"blah","label":"Blah","date":{"$$date":1582742699162},"backlinks":["<a href=\"/journal/74007871-3758-4cff-b36f-bb227884e74f\">[[Foo]] isA [[Blah]]</a>"],"_id":"RKz1GO0sAGMJBLrA"}
+{"id":"foo","label":"Foo","date":{"$$date":1582742699158},"backlinks":["<a href=\"/journal/74007871-3758-4cff-b36f-bb227884e74f\">[[Foo]] isA [[Blah]]</a>","<a href=\"/journal/47f93f3d-0f9a-4ffb-81be-02fca00487d7\">[[Foo]] causes [[Bar]]</a>"],"_id":"a5eKai4ltTMbt7Uo"}

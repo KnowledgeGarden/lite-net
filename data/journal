@@ -1,0 +1,2 @@
+{"text":"<a href=\"/topic/foo\">Foo</a> causes <a href=\"/topic/bar\">Bar</a>","subj":"Foo","pred":"causes","obj":"Bar","date":{"$$date":1582742707421},"id":"47f93f3d-0f9a-4ffb-81be-02fca00487d7","_id":"RGu2P5LZw8VWOllS"}
+{"text":"<a href=\"/topic/foo\">Foo</a> isA <a href=\"/topic/blah\">Blah</a>","subj":"Foo","pred":"isA","obj":"Blah","date":{"$$date":1582742699152},"id":"74007871-3758-4cff-b36f-bb227884e74f","_id":"g3871v3SOO9TdGi9"}
