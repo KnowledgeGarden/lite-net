@@ -23,6 +23,12 @@ Database = function() {
       return callback(err);
     });
   };
+
+  self.addBodyText = function(id, bodytext, callback) {
+    db.update({ id: id }, { $push: { bodylist: bodytext } }, {}, function (err) {
+      return callback(err);
+    });
+  };
   /**
    * @param id 
    * @param callback { err, data}

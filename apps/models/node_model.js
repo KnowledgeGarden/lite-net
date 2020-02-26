@@ -44,22 +44,31 @@ NodeModel = function() {
 
   /**
    * Find subject and object and process them
-   * @param triple
+   * @param subject
+   * @param predicate
+   * @param object
+   * @param url
+   * @param notes
    * @param callback {err, dat}
    */
-  self.processTriple = function(triple, callback) {
-    var subject = triplizer.findSubject(triple);
-    var object = triplizer.findObject(triple);
-    var predicate = triplizer.findPredicate(triple);
+  self.processTriple = function(subject, predicate, object, url, notes, callback) {
+    
     var uid = uuid.v4();
     var json = {};
     var subjectSlug = slugUtil.toSlug(subject);
     var objectSlug = slugUtil.toSlug(object);
+    var triple = subject+" "+predicate+" "+object;
     json.text = triplizer.setHrefs(subject, subjectSlug, object, objectSlug, predicate);
     json.subj = subject;
     json.pred = predicate;
     json.obj = object;
     json.date = new Date();
+    if (url) {
+      json.url = url;
+    }
+    if (notes) {
+      json.notes = notes;
+    }
     json.id = uid;
     //process the topics
     self.processNode(subject, subjectSlug, triple, uid);
@@ -89,6 +98,12 @@ NodeModel = function() {
     journalDB.get(id, function(err, data) {
       console.info("NM-GJ-1", err, data);
       return callback(err, data);
+    });
+  };
+
+  self.updateTopic = function(id, body, callback) {
+    topicDB.addBodyText(id, body, function(err) {
+      return callback(err);
     });
   };
 

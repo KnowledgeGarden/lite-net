@@ -1,5 +1,21 @@
-<p><a href="/">Return to Journal</a></p>
-<h1>{{label}}</h1>
+<h1><a href="/">{{title}}</a></h1>
+<h2>Topic: {{label}}</h2>
+<hr>
+<form id="nnForm" method="POST" action="/posttopic">
+    <input type="hidden" name="topicid" value="{{id}}">
+    <textarea placeholder="Begin typing" name="body" rows="4" cols="100"></textarea>
+    <br/>
+    <button type="submit">Submit</button>
+</form>
+<hr>
+<h3>Body</h3>
+<div style="overflow-y: auto; height:300px;">
+    {{#each bodylist}}
+        <p>
+        {{{this}}}
+        </p><br/>
+    {{/each}}
+</div>
 <h3>Backlinks</h3>
 <div style="overflow-y: auto; height:300px;">
    

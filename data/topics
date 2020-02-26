@@ -1,3 +1,5 @@
-{"id":"bar","label":"Bar","date":{"$$date":1582742707426},"backlinks":["<a href=\"/journal/47f93f3d-0f9a-4ffb-81be-02fca00487d7\">[[Foo]] causes [[Bar]]</a>"],"_id":"9U0Hc0AS5jBN8Rsz"}
-{"id":"blah","label":"Blah","date":{"$$date":1582742699162},"backlinks":["<a href=\"/journal/74007871-3758-4cff-b36f-bb227884e74f\">[[Foo]] isA [[Blah]]</a>"],"_id":"RKz1GO0sAGMJBLrA"}
-{"id":"foo","label":"Foo","date":{"$$date":1582742699158},"backlinks":["<a href=\"/journal/74007871-3758-4cff-b36f-bb227884e74f\">[[Foo]] isA [[Blah]]</a>","<a href=\"/journal/47f93f3d-0f9a-4ffb-81be-02fca00487d7\">[[Foo]] causes [[Bar]]</a>"],"_id":"a5eKai4ltTMbt7Uo"}
+{"id":"foo","label":"Foo","date":{"$$date":1582755161331},"backlinks":["<a href=\"/journal/290432fa-2e6f-4a46-abb9-1861cd17314d\">Foo causes Bar</a>"],"_id":"cxo7mAtA67NaTa06"}
+{"id":"bar","label":"Bar","date":{"$$date":1582755161332},"backlinks":["<a href=\"/journal/290432fa-2e6f-4a46-abb9-1861cd17314d\">Foo causes Bar</a>"],"_id":"sXYjTCnlj5R3bXRK"}
+{"id":"foo","label":"Foo","date":{"$$date":1582755161331},"backlinks":["<a href=\"/journal/290432fa-2e6f-4a46-abb9-1861cd17314d\">Foo causes Bar</a>","<a href=\"/journal/cb51650d-5aa6-41e1-95d9-15fb4e87292e\">Foo isA Blah</a>"],"_id":"cxo7mAtA67NaTa06"}
+{"id":"blah","label":"Blah","date":{"$$date":1582755430902},"backlinks":["<a href=\"/journal/cb51650d-5aa6-41e1-95d9-15fb4e87292e\">Foo isA Blah</a>"],"_id":"3v6xVQZPm7SXpilf"}
+{"id":"foo","label":"Foo","date":{"$$date":1582755161331},"backlinks":["<a href=\"/journal/290432fa-2e6f-4a46-abb9-1861cd17314d\">Foo causes Bar</a>","<a href=\"/journal/cb51650d-5aa6-41e1-95d9-15fb4e87292e\">Foo isA Blah</a>"],"_id":"cxo7mAtA67NaTa06","bodylist":["Foo is a crucial topic in the domain of nonsense."]}

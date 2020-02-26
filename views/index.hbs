@@ -1,10 +1,26 @@
 <script>
-  function doClick(e) {
-    var code = (e.keyCode ? e.keyCode : e.which);
-    if(code == 13) { //Enter keycode
-      document.getElementById("nnForm").submit();
+  function validateForm() {
+    var x = $("#subjx").val();
+    if (!x || x === "") {
+        alert("Subject required");
+        return false;
     }
-    
+    x = $("#predx").val();
+    if (!x || x === "") {
+      alert("Predicate required");
+      return false;
+    }
+    x = $("#objx").val();
+    if (!x || x === "") {
+        alert("Object required");
+        return false;
+    }
+    return true;
+  }
+
+  function doClick() {
+    validateForm();
+    document.getElementById("nnForm").submit();
   }
 </script>
 
@@ -13,8 +29,14 @@
 <div style="overflow-y: auto; height:300px;">
     <!-- New note space -->
     <form id="nnForm" method="POST" action="/postnote">
-      <input name="details" placeholder="Type new note" type="text" onKeyPress="doClick(event)" >
+      <input id="subjx" name="subject" placeholder="Subject" type="text" >
+      <input id="predx" name="predicate" placeholder="Predicate" type="text" >
+      <input id="objx" name="object" placeholder="Object" type="text" ><br/>
+      <input name="url" placeholder="url" type="text" ><br/>
+      <input name="notes" placeholder="comments" type="text" >
+      <input type="button" onclick="doClick()" value="Submit">
     </form>
+    <hr>
     {{#each noteList}}
       <p>
         {{date}}<br/>
